@@ -62,7 +62,7 @@ function formatarNomeTerritorio(id) {
         return `Território ${match[1]}`;
     }
     // Se não seguir o padrão numérico, pode adicionar casos específicos ou capitalizar
-    // Ex: if (id === "bosque-corujas-do-mundo") return "Bosque Corujas do Mundo";
+    
     return id.replace(/-/g, ' ').replace(/\b\w/g, l => l.toUpperCase()); // Exemplo: converte "algum-nome" para "Algum Nome"
 }
 
