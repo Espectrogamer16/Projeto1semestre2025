@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/assets/css/territorio.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Território 5</title>
+</head>
+
+<body>
+    <h1>Território 5</h1>
+    <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+    <section class="container">
+        <div class="card__container">
+
+            <div class="card__product" onclick="abrirModal('modal-aguias-territorio5')">
+                <img src="/assets/images/aguia-full.jpg" alt="aguias-territorio5" class="card__img">
+                <h3 class="card__name">Águias</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-gavioes-territorio5')">
+                <img src="/assets/images/gavião-full.jpg" alt="gavioes-territorio5" class="card__img">
+                <h3 class="card__name">Gaviões</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-harpia-territorio5')">
+                <img src="/assets/images/harpia-full.webp" alt="harpia-territorio5" class="card__img">
+                <h3 class="card__name">Harpia</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-condor-territorio5')">
+                <img src="/assets/images/condor-full.jpg" alt="condor-territorio5" class="card__img">
+                <h3 class="card__name">Condor</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-urubu-rei-territorio5')">
+                <img src="/assets/images/urubu-rei-full.jpg" alt="urubu-rei-territorio5" class="card__img">
+                <h3 class="card__name">Urubu-rei</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+    <div class="modal" id="modal-aguias-territorio5">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Águias</h2>
+            <div id="conteudo-aguias-territorio5" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/aguia-full.jpg" alt="Águias" class="animal-img" />
+                <p class="descricao-animal">As Águias são aves de rapina majestosas, conhecidas por sua visão aguçada,
+                    força e voo imponente. Elas constroem ninhos em locais altos e são predadoras no topo da cadeia
+                    alimentar em diversos ecossistemas.</p>
+            </div>
+            <div id="senha-aguias-territorio5" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-aguias-territorio5" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('aguias-territorio5', 'aguia123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-aguias-territorio5" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-gavioes-territorio5">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Gaviões</h2>
+            <div id="conteudo-gavioes-territorio5" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/gavião-full.jpg" alt="Gaviões" class="animal-img" />
+                <p class="descricao-animal">Os Gaviões são aves de rapina menores que as águias, mas igualmente
+                    eficientes na caça. São ágeis voadores e predadores versáteis, com dietas que variam de insetos a
+                    pequenos mamíferos e aves.</p>
+            </div>
+            <div id="senha-gavioes-territorio5" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-gavioes-territorio5" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('gavioes-territorio5', 'gaviao123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-gavioes-territorio5" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-harpia-territorio5">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Harpia</h2>
+            <div id="conteudo-harpia-territorio5" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/harpia-full.webp" alt="Harpia" class="animal-img" />
+                <p class="descricao-animal">A Harpia é uma das maiores e mais poderosas águias do mundo, habitante das
+                    florestas tropicais das Américas. É um predador impressionante, com garras fortes capazes de caçar
+                    grandes macacos e preguiças.</p>
+            </div>
+            <div id="senha-harpia-territorio5" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-harpia-territorio5" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('harpia-territorio5', 'harpia123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-harpia-territorio5" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-condor-territorio5">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Condor</h2>
+            <div id="conteudo-condor-territorio5" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/condor-full.jpg" alt="Condor" class="animal-img" />
+                <p class="descricao-animal">O Condor é uma das maiores aves voadoras do mundo, com uma envergadura de
+                    asas impressionante. Existem duas espécies principais, o Condor-dos-Andes e o Condor-da-Califórnia,
+                    ambos importantes necrófagos que ajudam a limpar o ambiente.</p>
+            </div>
+            <div id="senha-condor-territorio5" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-condor-territorio5" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('condor-territorio5', 'condor123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-condor-territorio5" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-urubu-rei-territorio5">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Urubu-rei</h2>
+            <div id="conteudo-urubu-rei-territorio5" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/urubu-rei-full.jpg" alt="Urubu-rei" class="animal-img" />
+                <p class="descricao-animal">O Urubu-rei é um dos urubus mais coloridos, com uma cabeça vibrante e
+                    plumagem em tons de branco e preto. É um necrófago essencial para o ecossistema, ajudando a prevenir
+                    a proliferação de doenças ao consumir carcaças.</p>
+            </div>
+            <div id="senha-urubu-rei-territorio5" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-urubu-rei-territorio5" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('urubu-rei-territorio5', 'urubu123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-urubu-rei-territorio5" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+        function abrirModal(id) {
+            document.getElementById('overlay').style.display = 'flex';
+            document.getElementById(id).style.display = 'flex';
+            prepararModalComSenha(id);
+        }
+
+        function fecharModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+        }
+
+        window.verificarSenha = verificarSenha;
+        window.abrirModal = abrirModal;
+        window.fecharModal = fecharModal;
+    </script>
+</body>
+
+</html>

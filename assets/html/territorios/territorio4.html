@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/assets/css/territorio.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Território 4</title>
+</head>
+
+<body>
+    <h1>Território 4</h1>
+    <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+    <section class="container">
+        <div class="card__container">
+
+            <div class="card__product" onclick="abrirModal('modal-rinoceronte-territorio4')">
+                <img src="/assets/images/rinoceronte-full.webp" alt="rinoceronte-territorio4" class="card__img">
+                <h3 class="card__name">Rinoceronte</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-zebra-territorio4')">
+                <img src="/assets/images/zebra-full.jpg" alt="zebra-territorio4" class="card__img">
+                <h3 class="card__name">Zebra</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-girafa-territorio4')">
+                <img src="/assets/images/girafa-full.jpg" alt="girafa-territorio4" class="card__img">
+                <h3 class="card__name">Girafa</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-suricata-territorio4')">
+                <img src="/assets/images/suricato-full.webp" alt="suricata-territorio4" class="card__img">
+                <h3 class="card__name">Suricato</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-dromedario-territorio4')">
+                <img src="/assets/images/dromedario-full.jpg" alt="dromedario-territorio4" class="card__img">
+                <h3 class="card__name">Dromedário</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-realeza-savana-territorio4')">
+                <img src="/assets/images/leao-full.png" alt="realeza-savana-territorio4" class="card__img">
+                <h3 class="card__name">Realeza da Savana <br>(Família de Leões)</h3>
+            </div>
+
+            <div class="card__product" onclick="abrirModal('modal-hipopotamo-territorio4')">
+                <img src="/assets/images/hipopotamo-full.webp" alt="hipopotamo-territorio4" class="card__img">
+                <h3 class="card__name">Hipopótamo</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+    <div class="modal" id="modal-rinoceronte-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Rinoceronte</h2>
+            <div id="conteudo-rinoceronte-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/rinoceronte-full.webp" alt="Rinoceronte" class="animal-img" />
+                <p class="descricao-animal">Os Rinocerontes são grandes mamíferos herbívoros, notáveis por seus chifres
+                    e pele espessa. Habitantes das savanas africanas e florestas asiáticas, desempenham um papel crucial
+                    na modelagem da paisagem através de seus hábitos alimentares.</p>
+            </div>
+            <div id="senha-rinoceronte-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-rinoceronte-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('rinoceronte-territorio4', 'rino123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-rinoceronte-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-zebra-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Zebra</h2>
+            <div id="conteudo-zebra-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/zebra-full.jpg" alt="Zebra" class="animal-img" />
+                <p class="descricao-animal">As Zebras são equídeos africanos icônicos, reconhecidos por suas distintas
+                    listras pretas e brancas. Vivem em grandes manadas e são herbívoras, pastando em vastas extensões da
+                    savana.</p>
+            </div>
+            <div id="senha-zebra-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-zebra-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('zebra-territorio4', 'zebra123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-zebra-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-girafa-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Girafa</h2>
+            <div id="conteudo-girafa-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/girafa-full.jpg" alt="Girafa" class="animal-img" />
+                <p class="descricao-animal">As Girafas são os animais terrestres mais altos, com pescoços e pernas
+                    longas que lhes permitem alcançar as folhas mais altas das árvores. São mamíferos herbívoros
+                    sociais, encontrados nas savanas africanas.</p>
+            </div>
+            <div id="senha-girafa-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-girafa-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('girafa-territorio4', 'girafa123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-girafa-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-suricata-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Suricato</h2>
+            <div id="conteudo-suricata-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/suricato-full.webp" alt="Suricata" class="animal-img" />
+                <p class="descricao-animal">Os Suricatos são pequenos mamíferos sociais do sul da África, conhecidos por
+                    sua postura ereta e trabalho em equipe. Vivem em colônias subterrâneas, caçam insetos e pequenos
+                    vertebrados, e têm um sistema de vigilância muito eficaz.</p>
+            </div>
+            <div id="senha-suricata-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-suricata-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('suricata-territorio4', 'suricata123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-suricata-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-dromedario-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Dromedário</h2>
+            <div id="conteudo-dromedario-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/dromedario-full.jpg" alt="Dromedário" class="animal-img" />
+                <p class="descricao-animal">O Dromedário é um camelo de uma corcova, adaptado a ambientes áridos e
+                    desérticos. É um animal resistente, capaz de suportar longos períodos sem água e de carregar grandes
+                    cargas, sendo essencial para a vida em regiões secas.</p>
+            </div>
+            <div id="senha-dromedario-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-dromedario-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('dromedario-territorio4', 'dromedario123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-dromedario-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-realeza-savana-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Realeza da Savana <br>(Família de Leões)</h2>
+            <div id="conteudo-realeza-savana-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/leao-full.png" alt="Realeza da Savana (Família de Leões)" class="animal-img" />
+                <p class="descricao-animal">A Realeza da Savana representa a família de leões, os maiores felinos
+                    sociais. Eles vivem em grupos chamados "alcateias", onde caçam cooperativamente e cuidam dos
+                    filhotes, sendo predadores de topo na cadeia alimentar da savana.</p>
+            </div>
+            <div id="senha-realeza-savana-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Esta família está protegida. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-realeza-savana-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('realeza-savana-territorio4', 'leoes123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-realeza-savana-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-hipopotamo-territorio4">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Hipopótamo</h2>
+            <div id="conteudo-hipopotamo-territorio4" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/hipopotamo-full.webp" alt="Hipopótamo" class="animal-img" />
+                <p class="descricao-animal">Os Hipopótamos são grandes mamíferos semi-aquáticos, que passam a maior
+                    parte do dia na água para se proteger do sol. São herbívoros que pastam à noite em terra, e são
+                    importantes para o ecossistema de rios e lagos.</p>
+            </div>
+            <div id="senha-hipopotamo-territorio4" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-hipopotamo-territorio4" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('hipopotamo-territorio4', 'hipo123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-hipopotamo-territorio4" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+        function abrirModal(id) {
+            document.getElementById('overlay').style.display = 'flex';
+            document.getElementById(id).style.display = 'flex';
+            prepararModalComSenha(id);
+        }
+
+        function fecharModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+        }
+
+        window.verificarSenha = verificarSenha;
+        window.abrirModal = abrirModal;
+        window.fecharModal = fecharModal;
+    </script>
+</body>
+
+</html>

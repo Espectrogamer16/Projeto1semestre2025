@@ -1,0 +1,212 @@
+.modal {
+  display: flex;
+  /* necessário para centralizar com justify/align */
+  display: none;
+  /* você liga/desliga via JavaScript */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  /* top: 0; right: 0; bottom: 0; left: 0 */
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.modal-content-territorio {
+  background-color: white;
+  padding: 20px;
+  width: 800px;
+  max-width: 90%;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.modal-content {
+  /*Ele afeta todos os botões inferiores menos o territorio */
+  background-color: white;
+  padding: 20px;
+  width: 400px;
+  max-width: 90%;
+  border-radius: 10px;
+  color: black;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1000;
+}
+
+.modal-content h1 {
+  margin-top: 0.5rem;
+  font-size: 2rem;
+}
+
+.modal-content p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.botao-fechar-territorio {
+  position: absolute;
+  top: 10%;
+  left: 70%;
+  background-color: #dc3545;
+  /* Vemelho de Grave */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-fechar-territorio:hover {
+  background-color: #c82333;
+  /* Quando passar em cima do botão fechar escurece */
+}
+
+.botao-fechar {
+  position: absolute;
+  top: 5%;
+  left: 75%;
+  background-color: #dc3545;
+  /* Vemelho de Grave */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.botao-fechar:hover {
+  background-color: #c82333;
+  /* Quando passar em cima do botão fechar escurece */
+}
+
+.botao-cancelar {
+  position: absolute;
+  top: 55%;
+  left: 73%;
+  background-color: #dc3545;
+  /* Vemelho de Grave */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.botao-cancelar:hover {
+  background-color: #c82333;
+  /* Quando passar em cima do botão fechar escurece */
+}
+
+.botao-sair {
+  position: absolute;
+  top: 55%;
+  left: 0%;
+  background-color: #d6dc35;
+  /* Amarelo de aviso */
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-sair:hover {
+  background-color: #c3c823;
+  /* Quando passar em cima do botão sair escurece */
+}
+
+/* Barra de progresso do perfil*/
+.barra-progresso {
+  width: 100%;
+  height: 20px;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+/*Barra de preenchimento*/
+.preenchimento {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  transition: width 0.5s;
+}
+.progresso-territorios {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.progresso-territorios h2 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.tabela-progresso {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tabela-progresso thead th {
+    background-color: #4CAF50; /* Um verde bonito */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid #388E3C;
+}
+
+.tabela-progresso tbody td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #555;
+}
+
+.tabela-progresso tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.tabela-progresso tbody tr:hover {
+    background-color: #e0e0e0;
+}
+
+/* Centraliza o texto nas colunas de números para melhor leitura */
+.tabela-progresso tbody td:nth-child(2),
+.tabela-progresso tbody td:nth-child(3) {
+    text-align: center;
+}
+
+/* Estilo para a mensagem "Completo!" */
+.tabela-progresso tbody td:nth-child(3):contains("Completo!") {
+    font-weight: bold;
+    color: #28a745; /* Verde para indicar completude */
+}

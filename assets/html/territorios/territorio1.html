@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" />
+  <link rel="stylesheet" href="/assets/css/territorio.css" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+  <title>Território 1</title>
+</head>
+
+<body>
+  <h1>Território 1</h1>
+  <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+  <section class="container">
+    <div class="card__container">
+      <div class="card__product" onclick="abrirModal('modal-onca-pintada-territorio1')">
+        <img src="/assets/images/onça-full.png" alt="onca-pintada" class="card__img" />
+        <h3 class="card__name">Onça-Pintada</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-onca-parda-territorio1')">
+        <img src="/assets/images/onça-parda-full-2.png" alt="onca-parda" class="card__img" />
+        <h3 class="card__name">Onça-Parda</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-jacare-cagados-territorio1')">
+        <img src="/assets/images/jacare-full.webp" alt="jacare-cagados" class="card__img" />
+        <h3 class="card__name">Jacaré/Cágados</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-elefante-territorio1')">
+        <img src="/assets/images/elefante-full.jpg" alt="elefante" class="card__img" />
+        <h3 class="card__name">Elefante</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-flamingos-territorio1')">
+        <img src="/assets/images/Flamingo-full.webp" alt="flamingos" class="card__img" />
+        <h3 class="card__name">Flamingos</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-pequenos-felinos-territorio1')">
+        <img src="/assets/images/pequenos-felinos2-full.jpg" alt="pequenos-felinos" class="card__img" />
+        <h3 class="card__name">Pequenos Felinos</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-quati-territorio1')">
+        <img src="/assets/images/quati-full.jpg" alt="quati" class="card__img" />
+        <h3 class="card__name">Quati</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-lobo-guara-territorio1')">
+        <img src="/assets/images/lobo-guara-full.jpg" alt="lobo-guara" class="card__img" />
+        <h3 class="card__name">Lobo-guará</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-irara-territorio1')">
+        <img src="/assets/images/Irara-full.jpg" alt="irara" class="card__img" />
+        <h3 class="card__name">Irara</h3>
+      </div>
+    </div>
+  </section>
+
+  <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+  <div class="modal" id="modal-onca-pintada-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Onça-Pintada</h2>
+      <div id="conteudo-onca-pintada-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/onça-full.png" alt="Onça-Pintada" class="animal-img" />
+        <p class="descricao-animal">A Onça-Pintada é o maior felino das Américas, com uma pelagem marcante de rosetas
+          que a camufla perfeitamente
+          em seu habitat. É um predador solitário e oportunista, encontrado em diversos biomas, desde florestas
+          tropicais a pântanos. Desempenha um papel crucial no controle de populações de presas, ajudando a manter o
+          equilíbrio ecológico e a saúde do ecossistema.</p>
+      </div>
+      <div id="senha-onca-pintada-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-onca-pintada-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('onca-pintada-territorio1', 'onca123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-onca-pintada-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-onca-parda-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Onça-Parda</h2>
+      <div id="conteudo-onca-parda-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/onça-parda-full-2.png" alt="Onça-Parda" class="animal-img" />
+        <p class="descricao-animal">A Onça-Parda, também conhecida como puma ou suçuarana, é um felino de pelagem
+          uniforme que varia do
+          cinza-prateado ao marrom-avermelhado. Possui a maior distribuição geográfica entre os grandes felinos do Novo
+          Mundo, sendo um predador ágil e versátil, capaz de viver em uma ampla variedade de habitats.</p>
+      </div>
+      <div id="senha-onca-parda-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-onca-parda-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('onca-parda-territorio1', 'onca123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-onca-parda-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-jacare-cagados-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Jacaré/Cágados</h2>
+      <div id="conteudo-jacare-cagados-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/jacare-full.webp" alt="Jacaré/Cágados" class="animal-img" />
+        <p class="descricao-animal">Jacarés e cágados são répteis aquáticos que desempenham funções essenciais em
+          ecossistemas de água doce, como
+          rios, lagos e pântanos. Os jacarés são predadores de topo, controlando populações de peixes e outros animais.
+          Já os cágados, em sua maioria, são onívoros, contribuindo para a reciclagem de nutrientes e a manutenção da
+          biodiversidade.</p>
+      </div>
+      <div id="senha-jacare-cagados-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-jacare-cagados-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('jacare-cagados-territorio1', 'jacare123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-jacare-cagados-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-elefante-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Elefante</h2>
+      <div id="conteudo-elefante-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/elefante-full.jpg" alt="Elefante" class="animal-img" />
+        <p class="descricao-animal">O Elefante é o maior mamífero terrestre, conhecido por sua inteligência notável,
+          memória excepcional e fortes
+          laços sociais que formam entre si. Vive em manadas complexas, geralmente lideradas por uma fêmea mais velha.
+          São "engenheiros de ecossistemas", pois seus hábitos de alimentação e movimentação ajudam a dispersar sementes
+          e a criar clareiras, moldando a paisagem.</p>
+      </div>
+      <div id="senha-elefante-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-elefante-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('elefante-territorio1', 'elefante123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-elefante-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-flamingos-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Flamingos</h2>
+      <div id="conteudo-flamingos-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/Flamingo-full.webp" alt="Flamingos" class="animal-img" />
+        <p class="descricao-animal">Os Flamingos são aves aquáticas inconfundíveis, com pernas longas, pescoço curvo e
+          uma plumagem rosa
+          vibrante, que obtêm a partir dos pigmentos presentes em sua dieta. Vivem em grandes colônias em lagos, lagoas
+          salobras e áreas costeiras, onde filtram pequenos organismos, como crustáceos e algas, da água.</p>
+      </div>
+      <div id="senha-flamingos-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-flamingos-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('flamingos-territorio1', 'flamingo123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-flamingos-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-pequenos-felinos-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Pequenos Felinos</h2>
+      <div id="conteudo-pequenos-felinos-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/pequenos-felinos2-full.jpg" alt="Pequenos Felinos" class="animal-img" />
+        <p class="descricao-animal">Os Pequenos Felinos, um grupo diverso que inclui espécies como gatos-do-mato,
+          jaguatiricas, gatos-mouriscos e
+          muitos outros, são predadores ágéis e discretos. Embora menores que as onças, são vitais para o controle de
+          roedores e outras presas em seus respectivos habitats. Sua presença indica a saúde e o equilíbrio de um
+          ecossistema.</p>
+      </div>
+      <div id="senha-pequenos-felinos-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-pequenos-felinos-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('pequenos-felinos-territorio1', 'felinos123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-pequenos-felinos-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-quati-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Quati</h2>
+      <div id="conteudo-quati-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/quati-full.jpg" alt="Quati" class="animal-img" />
+        <p class="descricao-animal">O Quati é um mamífero onívoro pertencente à família dos procionídeos, conhecido por
+          seu focinho alongado e
+          flexível, que usa para farejar alimentos no solo, e sua cauda anelada. Vive em grupos sociais, principalmente
+          as fêmeas e filhotes, e é um importante dispersor de sementes, além de controlar populações de insetos e
+          outros pequenos animais.</p>
+      </div>
+      <div id="senha-quati-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-quati-territorio1" placeholder="Digite a senha..." class="senha-input" />
+        <button onclick="verificarSenha('quati-territorio1', 'quati123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-quati-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-lobo-guara-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Lobo-Guará</h2>
+      <div id="conteudo-lobo-guara-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/lobo-guara-full.jpg" alt="Lobo-Guará" class="animal-img" />
+        <p class="descricao-animal">O Lobo-guará é o maior canídeo da América do Sul, facilmente reconhecido por suas
+          pernas longas e esguias,
+          adaptadas para caminhar em campos altos, e sua pelagem avermelhada. É um animal solitário e onívoro, com uma
+          dieta diversificada que inclui uma grande quantidade de frutas e pequenos animais, sendo fundamental para o
+          equilíbrio do Cerrado, onde atua como dispersor de sementes.</p>
+      </div>
+      <div id="senha-lobo-guara-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-lobo-guara-territorio1" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('lobo-guara-territorio1', 'lobo123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-lobo-guara-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-irara-territorio1">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Irara</h2>
+      <div id="conteudo-irara-territorio1" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/Irara-full.jpg" alt="Irara" class="animal-img" />
+        <p class="descricao-animal">A Irara é um mustelídeo ágil e predominantemente arborícola, encontrado em diversas
+          formações florestais das
+          Américas. É um animal ativo e curioso, com uma dieta variada que inclui frutas, pequenos mamíferos, aves e
+          insetos. Sua capacidade de se mover entre as árvores a torna um importante dispersor de sementes em seu
+          ambiente.</p>
+      </div>
+      <div id="senha-irara-territorio1" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-irara-territorio1" placeholder="Digite a senha..." class="senha-input" />
+        <button onclick="verificarSenha('irara-territorio1', 'irara123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-irara-territorio1" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+    function abrirModal(id) {
+      document.getElementById('overlay').style.display = 'flex';
+      document.getElementById(id).style.display = 'flex';
+      prepararModalComSenha(id);
+    }
+
+    function fecharModal() {
+      document.getElementById('overlay').style.display = 'none';
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+
+    window.verificarSenha = verificarSenha;
+    window.abrirModal = abrirModal;
+    window.fecharModal = fecharModal;
+  </script>
+</body>
+
+</html>

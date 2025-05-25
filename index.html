@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/mapa.css" />
+  <link rel="stylesheet" href="/assets/CSS/estilo.css" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/territorio.css" />
+  <title>Animap</title>
+</head>
+
+<body>
+
+  <div class="containermap">
+  </div>
+
+  <!-- BARRA DE NAVEGAÇÃO FIXA -->
+  <div class="barra-inferior">
+    <button id="btn-territorios" onclick="abrirModal('modal-territorios')">Territorios</button>
+    <button id="btn-missoes" onclick="abrirModal('modal-missoes')">Missões</button>
+    <button id="btn-perfil" onclick="abrirModal('modal-perfil')">Perfil</button>
+    <button id="btn-avisos" onclick="abrirModal('modal-avisos')">Avisos</button>
+    <button id="btn-duvidas" onclick="abrirModal('modal-duvidas')">Dúvidas</button>
+    <button id="btn-sair" onclick="abrirModal('modal-sair')">Sair</button>
+  </div>
+
+  <!-- MODAIS DE OUTRAS SEÇÕES -->
+  <div class="modal" id="modal-territorios">
+    <div class="modal-content-territorio">
+      <section class="container">
+        <h1>Escolha um Território</h1>
+        <div class="card__container">
+          <!-- Territórios 1 a 6 -->
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio1.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 1" class="card__img">
+            <h3 class="card__name">Território 1</h3>
+          </div>
+
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio2.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 2" class="card__img">
+            <h3 class="card__name">Território 2</h3>
+          </div>
+
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio3.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 3" class="card__img">
+            <h3 class="card__name">Território 3</h3>
+          </div>
+
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio4.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 4" class="card__img">
+            <h3 class="card__name">Território 4</h3>
+          </div>
+
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio5.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 5" class="card__img">
+            <h3 class="card__name">Território 5</h3>
+          </div>
+
+          <div class="card__product" onclick="window.location.href='/assets/html/territorios/territorio6.html'">
+            <img src="/assets/images/icone-territorios.png" alt="Território 6" class="card__img">
+            <h3 class="card__name">Território 6</h3>
+          </div>
+        </div>
+      </section>
+      <button class="botao-fechar-territorio" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-missoes">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h1>Missões</h1>
+      <p>Confira as areas onde ainda precisa desbloquear os animais em cada território:</p>
+      <section class="progresso-territorios">
+        <table class="tabela-progresso">
+          <thead>
+            <tr>
+              <th>Território</th>
+              <th>Desbloqueados</th>
+              <th>Faltando</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-progresso-corpo">
+          </tbody>
+        </table>
+      </section>
+
+      <button class="botao-fechar" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-perfil">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h1>Perfil</h1>
+      <p id="logado">Olá!</p>
+
+      <div class="perfil-info">
+        <p><strong>Animais desbloqueados:</strong> <span id="qtd-desbloqueados">0</span></p>
+        <p><strong>Pontuação total:</strong> <span id="pontuacao-total">0</span> pontos</p>
+
+        <div class="barra-progresso">
+          <div id="barra-preenchida" class="preenchimento"></div>
+        </div>
+        <p id="porcentagem-progresso">0% desbloqueado</p>
+      </div>
+
+      <p id="mensagem-incentivo" class="mensagem-incentivo"></p>
+
+      <button onclick="atualizarPerfil()">Atualizar Progresso</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-avisos">
+    <div class="modal-content">
+      <h1>Avisos</h1>
+      <p><b>Bem-vindo ao zoológico!</b><br>Leia com atenção as orientações a seguir para garantir uma visita segura e
+        respeitosa.
+      </p>
+
+      <p><b>Não pule dentro dos recintos:</b><br>Além de ser extremamente perigoso, isso pode causar estresse aos
+        animais. Mantenha-se sempre nas áreas delimitadas para visitantes.
+      </p>
+
+      <p><b>Se deixar cair algo dentro do recinto:</b><br>Nunca tente recuperar por conta própria. Avise imediatamente
+        um funcionário do zoológico.
+      </p>
+
+      <p><b>Não alimente os animais:</b><br>Todos os animais têm dietas específicas. Alimentos externos podem causar
+        sérios problemas de saúde.
+      </p>
+
+      <p><b>Não bata nos vidros:</b><br>Evite bater ou fazer barulhos fortes nas vitrines. Isso assusta e estressa os
+        animais.
+      </p>
+
+      <p><b>Supervisione as crianças:</b><br>Mantenha sempre as crianças por perto e explique a importância de respeitar
+        os espaços e os animais.
+      </p>
+
+      <p><b>Não jogue lixo no chão:</b><br>Utilize as lixeiras espalhadas pelo parque para manter o ambiente limpo e
+        seguro para todos.
+      </p>
+
+      <p><b>Respeite os horários:</b><br>Algumas áreas podem fechar em determinados horários para o descanso dos animais
+        ou manutenção. Fique atento à sinalização.
+      </p>
+
+      <p><b>Siga as orientações dos monitores:</b><br>Os funcionários do zoológico estão aqui para ajudar e garantir a
+        segurança de todos.
+      </p>
+
+      <p><b>Evite o uso excessivo de flash:</b><br>Fotografias com flash podem incomodar os animais, principalmente os
+        noturnos.
+      </p>
+
+      <p><b>Se encontrar um animal solto:</b><br>Afaste-se com calma e avise imediatamente um funcionário. Nunca tente
+        capturar ou tocar o animal.
+      </p>
+      <button class="botao-fechar" onclick="fecharModal()">Fechar
+      </button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-duvidas">
+    <div class="modal-content">
+      <h1>Dúvidas</h1>
+
+      <p><b>Esta com Duvidas ?</b><br>Aqui estão algumas soluções para possíveis problemas.</p>
+
+      <p><b>Não consigo clicar nos botões:</b><br>Tente recarregar a página. Se persistir, tente outro navegador ou
+        entre em contato com o suporte técnico.
+      </p>
+
+
+      <p><b>Se estiver perdido:</b><br>Procure por pontos de referência pelo zoológico e use eles como base para se
+        localizar no mapa.
+      </p>
+
+      <p><b>Como funcionam os territórios:</b><br>Cada território representa uma área do zoológico com diferentes
+        animais. Clique nos botões numerados para explorar.
+      </p>
+
+      <p><b>O que são as missões?</b><br>As missões são desafios que ajudam a desbloquear animais e aumento de
+        pontuação.
+      </p>
+
+      <p><b>Onde encontro senhas?</b><br>As senhas podem estar espalhadas em placas pelo zoológico real ou
+        nos totems do zoológico.
+      </p>
+
+      <p><b>Se não conseguir desbloquear um animal:</b><br>Verifique se a senha está correta e tente novamente.</p>
+
+      <p><b>Por que não vejo nada ao clicar em um animal?</b><br>Verifique se ele já foi desbloqueado e se sua conexão
+        está estável.
+      </p>
+
+      <p><b>Se precisar de ajuda técnica:</b><br>Verifique se o seu navegador está atualizado e caso o problema persista
+        procure um funcionário do zoológico.
+      </p>
+
+      <p><b>Se encontrar um bug:</b><br>Por favor, reporte o problema para que possamos corrigir.</p>
+
+      <p><b>Posso jogar em celular?</b><br>Sim! O sistema foi otimizado para funcionar em celulares e tablets. Use a
+        barra inferior para navegar facilmente.
+      </p>
+
+      <p><b>Como salvo meu progresso?</b><br>O progresso sera salvo automaticamente (se estiver logado).</p>
+
+      <button class="botao-fechar" onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-sair">
+    <div class="modal-content">
+      <h1>Tem certeza que deseja sair?</h1>
+      <button class="botao-sair" onclick="sair()">Sim, sair</button>
+      <button class="botao-cancelar" onclick="fecharModal()">Cancelar</button>
+      <script>
+        function sair() {
+          localStorage.removeItem("token");
+          localStorage.removeItem("userLogado");
+          window.location.href = "./assets/html/signin.html";
+        }
+      </script>
+    </div>
+  </div>
+  <script src="/assets/js/index.js"></script>
+  <script type="module" src="/assets/js/progressoTerritorios.js"></script>
+  <script src="/assets/js/modais.js"></script>
+  <script src="/assets/js/atualizarPerfil.js"></script>
+  <script src="/assets/js/missoes.js"></script>
+</body>
+</html>

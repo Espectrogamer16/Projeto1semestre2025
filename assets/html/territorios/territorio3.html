@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="stylesheet" href="/assets/css/territorio.css" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <title>Território 3</title>
+</head>
+
+<body>
+  <h1>Território 3</h1>
+  <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+  <section class="container">
+    <div class="card__container">
+
+      <div class="card__product" onclick="abrirModal('modal-espaco-xochimilco-territorio3')">
+        <img src="/assets/images/axolote-full.jpg" alt="espaco-xochimilco-territorio3" class="card__img">
+        <h3 class="card__name">Espaço Xochimilco <br>Lar dos Axolotes</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-raposinha-do-campo-territorio3')">
+        <img src="/assets/images/raposinha-do-campo-full.jpg" alt="raposinha-do-campo-territorio3" class="card__img">
+        <h3 class="card__name">Raposinha-do-campo</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-cachorro-do-mato-territorio3')">
+        <img src="/assets/images/cachorro-do-mato-full.webp" alt="cachorro-do-mato-territorio3" class="card__img">
+        <h3 class="card__name">Cachorro-do-mato</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-tamandua-bandeira-territorio3')">
+        <img src="/assets/images/tamandua-bandeira-full.webp" alt="tamandua-bandeira-territorio3" class="card__img">
+        <h3 class="card__name">Tamanduá-bandeira</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-urso-de-oculos-territorio3')">
+        <img src="/assets/images/urso-de-oculos-full.jpg" alt="urso-de-oculos-territorio3" class="card__img">
+        <h3 class="card__name">Urso-de-Óculos</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-mundo-dino-territorio3')">
+        <img src="/assets/images/mundo-dino-tiranossauro-rex-zoo-sp.png" alt="mundo-dino-territorio3" class="card__img">
+        <h3 class="card__name">Mundo Dino</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+  <div class="modal" id="modal-espaco-xochimilco-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Espaço Xochimilco <br>Lar dos Axolotes</h2>
+      <div id="conteudo-espaco-xochimilco-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/axolote-full.jpg" alt="Espaço Xochimilco - Lar dos Axolotes" class="animal-img" />
+        <p class="descricao-animal">O Espaço Xochimilco é um ecossistema aquático vital, lar dos axolotes, anfíbios
+          salamandriformes únicos do México. Eles são notáveis por sua capacidade de regenerar membros e órgãos, sendo
+          objetos de grande interesse científico.</p>
+      </div>
+      <div id="senha-espaco-xochimilco-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este local está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-espaco-xochimilco-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('espaco-xochimilco-territorio3', 'axolote123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-espaco-xochimilco-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-raposinha-do-campo-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Raposinha-do-campo</h2>
+      <div id="conteudo-raposinha-do-campo-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/raposinha-do-campo-full.jpg" alt="Raposinha-do-campo" class="animal-img" />
+        <p class="descricao-animal">A Raposinha-do-campo é um pequeno canídeo nativo do Cerrado
+          brasileiro, conhecido por sua agilidade e hábitos solitários. Alimenta-se de pequenos mamíferos, aves, insetos
+          e frutas, contribuindo para o equilíbrio do ecossistema.</p>
+      </div>
+      <div id="senha-raposinha-do-campo-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-raposinha-do-campo-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('raposinha-do-campo-territorio3', 'raposa123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-raposinha-do-campo-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-cachorro-do-mato-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Cachorro-do-mato</h2>
+      <div id="conteudo-cachorro-do-mato-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/cachorro-do-mato-full.webp" alt="Cachorro-do-mato" class="animal-img" />
+        <p class="descricao-animal">O Cachorro-do-mato é um canídeo selvagem da América do Sul,
+          adaptado a diversos biomas. Vive em grupos familiares, caça pequenos animais e complementa sua dieta com
+          frutas, sendo um predador importante em seu habitat.
+        </p>
+      </div>
+      <div id="senha-cachorro-do-mato-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-cachorro-do-mato-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('cachorro-do-mato-territorio3', 'cachorro123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-cachorro-do-mato-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-tamandua-bandeira-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Tamanduá-bandeira</h2>
+      <div id="conteudo-tamandua-bandeira-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/tamandua-bandeira-full.webp" alt="Tamanduá-bandeira" class="animal-img" />
+        <p class="descricao-animal">O Tamanduá-bandeira é um mamífero fascinante do Cerrado e de outras regiões da
+          América do Sul, famoso por seu focinho longo e língua pegajosa, que usa para se alimentar de formigas e
+          cupins. Ele é vital para o controle dessas populações.</p>
+      </div>
+      <div id="senha-tamandua-bandeira-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-tamandua-bandeira-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('tamandua-bandeira-territorio3', 'tamandua123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-tamandua-bandeira-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-urso-de-oculos-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Urso-de-Óculos</h2>
+      <div id="conteudo-urso-de-oculos-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/urso-de-oculos-full.jpg" alt="Urso-de-Óculos" class="animal-img" />
+        <p class="descricao-animal">O Urso-de-Óculos, único urso da América do Sul, é reconhecido pelas manchas claras
+          ao redor dos olhos que se assemelham a óculos. É um animal predominantemente herbívoro que vive em florestas
+          montanhosas, ajudando na dispersão de sementes.</p>
+      </div>
+      <div id="senha-urso-de-oculos-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-urso-de-oculos-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('urso-de-oculos-territorio3', 'urso123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-urso-de-oculos-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-mundo-dino-territorio3">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Mundo Dino</h2>
+      <div id="conteudo-mundo-dino-territorio3" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/mundo-dino-tiranossauro-rex-zoo-sp.png" alt="Mundo Dino" class="animal-img" />
+        <p class="descricao-animal">O Mundo Dino é uma área temática que transporta os visitantes para a era dos
+          dinossauros. Com réplicas impressionantes e informações educativas, oferece uma imersão no período
+          pré-histórico, despertando a curiosidade sobre esses gigantes extintos.</p>
+      </div>
+      <div id="senha-mundo-dino-territorio3" class="senha-container">
+        <p class="senha-texto">🔒 Este local está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-mundo-dino-territorio3" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('mundo-dino-territorio3', 'dino123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-mundo-dino-territorio3" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+    function abrirModal(id) {
+      document.getElementById('overlay').style.display = 'flex';
+      document.getElementById(id).style.display = 'flex';
+      prepararModalComSenha(id);
+    }
+
+    function fecharModal() {
+      document.getElementById('overlay').style.display = 'none';
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+
+    window.verificarSenha = verificarSenha;
+    window.abrirModal = abrirModal;
+    window.fecharModal = fecharModal;
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <link rel="stylesheet" href="/assets/css/territorio.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+    <title>Território 6</title>
+</head>
+
+<body>
+    <h1>Território 6</h1>
+    <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+    
+    <section class="container">
+        <div class="card__container">
+
+           
+            <div class="card__product" onclick="abrirModal('modal-animal1-territorio6')">
+                <img src="/assets/images/chimpanze.webp" alt="animal1-territorio6" class="card__img">
+                <h3 class="card__name">Chimpanzé</h3>
+            </div>
+
+            
+            <div class="card__product" onclick="abrirModal('modal-animal2-territorio6')">
+                <img src="/assets/images/orangutango-full.png" alt="animal2-territorio6" class="card__img">
+                <h3 class="card__name">Orangotango</h3>
+            </div>
+
+            
+            <div class="card__product" onclick="abrirModal('modal-animal3-territorio6')">
+                <img src="/assets/images/mico-leao-preto-full.webp" alt="animal3-territorio6" class="card__img">
+                <h3 class="card__name">Primatas Brasileiros</h3>
+            </div>
+
+            
+            <div class="card__product" onclick="abrirModal('modal-animal4-territorio6')">
+                <img src="/assets/images/muriqui-do-sul-full.jpg" alt="animal4-territorio6" class="card__img">
+                <h3 class="card__name"> Muriqui do sul</h3>
+            </div>
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+    <!-- Modal Animal 1 -->
+    <div class="modal" id="modal-animal1-territorio6">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Chimpanzé</h2>
+
+            <div id="conteudo-animal1-territorio6" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/chimpanze.webp" alt="Chimpanzé" class="animal-img" />
+                <p class="descricao-animal">O Chimpanzé é um primata muito inteligente e sociável. Vive em grupos, usa
+                    ferramentas e aprende observando os outros. Eles são conhecidos por sua capacidade de resolver
+                    problemas e se comunicar de maneira complexa.
+                </p>
+            </div>
+
+            <div id="senha-animal1-territorio6" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-animal1-territorio6" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('animal1-territorio6', 'onca123')" class="senha-botao">Liberar</button>
+                <p id="mensagem-animal1-territorio6" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Animal 2 -->
+    <div class="modal" id="modal-animal2-territorio6">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Orangutango</h2>
+
+            <div id="conteudo-animal2-territorio6" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/orangutango-full.png" alt="Orangutango" />
+                <p>O Orangotango é um grande primata que vive nas florestas tropicais. É calmo, inteligente e passa a
+                    maior parte do tempo nas árvores.</p>
+            </div>
+
+            <div id="senha-animal2-territorio6" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-animal2-territorio6" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('animal2-territorio6', 'orangu123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-animal2-territorio6" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Animal 3 -->
+    <div class="modal" id="modal-animal3-territorio6">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Mico leão preto</h2>
+
+            <div id="conteudo-animal3-territorio6" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/mico-leao-preto-full.webp" alt="Mico leao preto" />
+                <p>O Mico-leão-preto é um pequeno primata que vive nas florestas da Mata Atlântica. É ágil, sociável e
+                    passa boa parte do tempo saltando entre os galhos. Vive em grupos familiares e se alimenta de
+                    frutas, insetos e pequenos animais.</p>
+            </div>
+
+            <div id="senha-animal3-territorio6" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-animal3-territorio6" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('animal3-territorio6', 'micoleao123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-animal3-territorio6" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Animal 4 -->
+    <div class="modal" id="modal-animal4-territorio6">
+        <div class="modal-content">
+            <button class="botao-fechar" onclick="fecharModal()">X</button>
+            <h2>Muriqui do sul</h2>
+
+            <div id="conteudo-animal4-territorio6" class="conteudo-animal" style="display: none;">
+                <img src="/assets/images/muriqui-do-sul-full.jpg" alt="muriqui-do-sul" />
+                <p>
+                    O muriqui-do-sul é o maior primata das Américas, vivendo nas florestas da Mata Atlântica. É
+                    pacífico, sociável e passa a maior parte do tempo nas copas das árvores, onde se locomove com
+                    agilidade usando seus longos braços e cauda preênsil. Vive em grupos harmoniosos e se alimenta de
+                    folhas, frutas e flores.</p>
+            </div>
+
+            <div id="senha-animal4-territorio6" class="senha-container">
+                <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+                <input type="password" id="input-senha-animal4-territorio6" placeholder="Digite a senha..."
+                    class="senha-input" />
+                <button onclick="verificarSenha('animal4-territorio6', 'muriqui123')"
+                    class="senha-botao">Liberar</button>
+                <p id="mensagem-animal4-territorio6" class="senha-erro"></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script type="module">
+        import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+        function abrirModal(id) {
+            document.getElementById('overlay').style.display = 'flex';
+            document.getElementById(id).style.display = 'flex';
+            prepararModalComSenha(id);
+        }
+
+        function fecharModal() {
+            document.getElementById('overlay').style.display = 'none';
+            document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+        }
+
+        window.verificarSenha = verificarSenha;
+        window.abrirModal = abrirModal;
+        window.fecharModal = fecharModal;
+    </script>
+</body>
+
+</html>

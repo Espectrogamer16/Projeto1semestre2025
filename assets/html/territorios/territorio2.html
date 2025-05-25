@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <link rel="stylesheet" href="/assets/css/territorio.css" />
+  <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
+  <title>Território 2</title>
+</head>
+
+<body>
+  <h1>Território 2</h1>
+  <a href="/index.html" class="botao-voltar">← Voltar para o mapa</a>
+
+  <section class="container">
+    <div class="card__container">
+
+      <div class="card__product" onclick="abrirModal('modal-araras-territorio2')">
+        <img src="/assets/images/araras-full.webp" alt="araras-territorio2" class="card__img">
+        <h3 class="card__name">Araras</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-papagaios-territorio2')">
+        <img src="/assets/images/papagaio-full.png" alt="papagaios-territorio2" class="card__img">
+        <h3 class="card__name">Papagaios</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-serpentes-territorio2')">
+        <img src="/assets/images/serpentes-full.webp" alt="serpentes-territorio2" class="card__img">
+        <h3 class="card__name">Serpentes</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-micos-territorio2')">
+        <img src="/assets/images/mico-leao-dourado-full.webp" alt="micos-territorio2" class="card__img">
+        <h3 class="card__name">Micos</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-anfibios-territorio2')">
+        <img src="/assets/images/sapo-cururu-em-um-ambiente-arido.jpg" alt="anfibios-territorio2" class="card__img">
+        <h3 class="card__name">Anfíbios</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-invertebrados-territorio2')">
+        <img src="/assets/images/invetebrados-full.jpg" alt="invertebrados-territorio2" class="card__img">
+        <h3 class="card__name">Invertebrados</h3>
+      </div>
+
+      <div class="card__product" onclick="abrirModal('modal-bosque-corujas-do-mundo-territorio2')">
+        <img src="/assets/images/coruja-full.webp" alt="bosque-corujas-do-mundo-territorio2" class="card__img">
+        <h3 class="card__name">Bosque Corujas do Mundo</h3>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="overlay" id="overlay" onclick="fecharModal()"></div>
+
+  <div class="modal" id="modal-araras-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Araras</h2>
+      <div id="conteudo-araras-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/araras-full.webp" alt="Araras" class="animal-img" />
+        <p class="descricao-animal">Araras: As Araras são aves tropicais vibrantes, conhecidas por suas cores
+          deslumbrantes e vocalizações fortes. Elas vivem em bandos, são monogâmicas e se alimentam principalmente de
+          frutas e sementes, desempenhando um papel vital na dispersão de sementes nas florestas.</p>
+      </div>
+      <div id="senha-araras-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-araras-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('araras-territorio2', 'arara123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-araras-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-papagaios-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Papagaios</h2>
+      <div id="conteudo-papagaios-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/papagaio-full.png" alt="Papagaios" class="animal-img" />
+        <p class="descricao-animal">Papagaios: Os Papagaios são aves inteligentes e sociáveis, famosas por sua
+          capacidade de imitar sons e a fala humana. Vivem em bandos, têm uma dieta variada de frutas, nozes e sementes,
+          e são encontrados em diversas regiões do mundo, principalmente tropicais.</p>
+      </div>
+      <div id="senha-papagaios-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-papagaios-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('papagaios-territorio2', 'papagaio123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-papagaios-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-serpentes-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Serpentes</h2>
+      <div id="conteudo-serpentes-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/serpentes-full.webp" alt="Serpentes" class="animal-img" />
+        <p class="descricao-animal">Serpentes: As Serpentes são répteis fascinantes, presentes em quase todos os
+          ecossistemas, exceto nas regiões polares. Elas são carnívoras, com dietas que variam de pequenos insetos a
+          grandes mamíferos, e desempenham um papel crucial no controle de pragas naturais.</p>
+      </div>
+      <div id="senha-serpentes-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-serpentes-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('serpentes-territorio2', 'serpente123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-serpentes-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-micos-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Micos</h2>
+      <div id="conteudo-micos-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/mico-leao-dourado-full.webp" alt="Micos" class="animal-img" />
+        <p class="descricao-animal">Micos: Os Micos são pequenos primatas ágeis, conhecidos por sua curiosidade e vida
+          em grupos familiares. Eles habitam florestas tropicais, alimentam-se de frutas, insetos e seiva de árvores, e
+          são importantes para a dispersão de sementes.</p>
+      </div>
+      <div id="senha-micos-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-micos-territorio2" placeholder="Digite a senha..." class="senha-input" />
+        <button onclick="verificarSenha('micos-territorio2', 'mico123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-micos-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-anfibios-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Anfíbios</h2>
+      <div id="conteudo-anfibios-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/sapo-cururu-em-um-ambiente-arido.jpg" alt="Anfíbios" class="animal-img" />
+        <p class="descricao-animal">Anfíbios: Os Anfíbios, como sapos, rãs e salamandras, são criaturas que iniciam sua
+          vida na água e muitos se adaptam à vida terrestre. São indicadores da saúde ambiental devido à sua pele
+          permeável e sensibilidade a mudanças no habitat.</p>
+      </div>
+      <div id="senha-anfibios-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-anfibios-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('anfibios-territorio2', 'anfibio123')" class="senha-botao">Liberar</button>
+        <p id="mensagem-anfibios-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-invertebrados-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Invertebrados</h2>
+      <div id="conteudo-invertebrados-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/invetebrados-full.jpg" alt="Invertebrados" class="animal-img" />
+        <p class="descricao-animal">Invertebrados: Os Invertebrados são o grupo mais diverso de animais, incluindo
+          insetos, aranhas, moluscos e minhocas. Eles desempenham funções ecológicas vitais, como polinização,
+          decomposição de matéria orgânica e são a base de muitas cadeias alimentares.</p>
+      </div>
+      <div id="senha-invertebrados-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este animal está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-invertebrados-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('invertebrados-territorio2', 'invertebrado123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-invertebrados-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-bosque-corujas-do-mundo-territorio2">
+    <div class="modal-content">
+      <button class="botao-fechar" onclick="fecharModal()">X</button>
+      <h2>Bosque Corujas do Mundo</h2>
+      <div id="conteudo-bosque-corujas-do-mundo-territorio2" class="conteudo-animal" style="display: none;">
+        <img src="/assets/images/coruja-full.webp" alt="Bosque Corujas do Mundo" class="animal-img" />
+        <p class="descricao-animal">Bosque Corujas do Mundo: O Bosque Corujas do Mundo é um habitat dedicado a diversas
+          espécies de corujas. Essas aves de rapina noturnas são mestres da camuflagem e da caça silenciosa,
+          desempenhando um papel importante no equilíbrio dos ecossistemas.</p>
+      </div>
+      <div id="senha-bosque-corujas-do-mundo-territorio2" class="senha-container">
+        <p class="senha-texto">🔒 Este local está protegido. Digite a senha para desbloquear:</p>
+        <input type="password" id="input-senha-bosque-corujas-do-mundo-territorio2" placeholder="Digite a senha..."
+          class="senha-input" />
+        <button onclick="verificarSenha('bosque-corujas-do-mundo-territorio2', 'coruja123')"
+          class="senha-botao">Liberar</button>
+        <p id="mensagem-bosque-corujas-do-mundo-territorio2" class="senha-erro"></p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { verificarSenha, prepararModalComSenha } from '/assets/js/senhaAnimais.js';
+
+    function abrirModal(id) {
+      document.getElementById('overlay').style.display = 'flex';
+      document.getElementById(id).style.display = 'flex';
+      prepararModalComSenha(id);
+    }
+
+    function fecharModal() {
+      document.getElementById('overlay').style.display = 'none';
+      document.querySelectorAll('.modal').forEach(modal => modal.style.display = 'none');
+    }
+
+    window.verificarSenha = verificarSenha;
+    window.abrirModal = abrirModal;
+    window.fecharModal = fecharModal;
+  </script>
+</body>
+
+</html>
