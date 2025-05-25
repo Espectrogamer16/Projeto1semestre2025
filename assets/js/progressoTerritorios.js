@@ -10,9 +10,9 @@ export function gerarTabelaProgressoTerritorios() {
 
     tabelaCorpo.innerHTML = ''; // Limpa qualquer conteúdo anterior da tabela
 
-    // Itera sobre cada território no objeto 'animais'
+    
     for (const territorioId in animais) {
-        // Garante que estamos processando apenas propriedades diretas do objeto, não protótipos
+        
         if (Object.hasOwnProperty.call(animais, territorioId)) {
             const listaAnimaisDoTerritorio = animais[territorioId];
             const totalAnimaisNoTerritorio = listaAnimaisDoTerritorio.length;
