@@ -1,4 +1,3 @@
-// assets/js/progressoTerritorios.js
 import { animais } from './lista.js'; // Importa o objeto de animais por território
 
 export function gerarTabelaProgressoTerritorios() {
